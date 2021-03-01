@@ -14,7 +14,14 @@
 <p><img src="https://img.icons8.com/dusk/64/000000/server.png" /></p>
 <p>-docker volume create volum_mail_server</p>
 <p>-docker run -p 443:443 -e TZ=Europe/Andorra -v volum_mail_server:/data --name "surfmailserver" -h "canvia_aquest_domini_o_se_veiem_lany_vinent.noesbroma" -t analogic/poste.io</p>
-<h5>Servidor de correu</h5>
+<h5>Instalar Docker </h5>
+<p>sudo apt-get update</p>
+<p>sudo apt-get install apt-transport-https ca-certificates curl gnupg2 software-properties-common</p>
+<p>curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -</p>
+<p>sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian buster stable"</p>
+<p>sudo apt-get update</p>
+<p>sudo apt-get install docker-ce docker-ce-cli containerd.io</p>
+<p>sudo systemctl status docker</p>
 <h5>Generaci&oacute; de certificats de servidor i client.</h5>
 <p><img src="https://img.icons8.com/doodle/48/000000/certificate.png" /></p>
 <p>De moment porto diverses proves per crear el certificat i nose com fer-ho. 😅</p>
